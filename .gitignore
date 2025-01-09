@@ -1,0 +1,5 @@
+.DS_Store
+
+dev/universal_sentence_encoder/saved_model.pb
+dev/universal_sentence_encoder/variables/variables.data-00000-of-00001
+dev/universal_sentence_encoder/variables/variables.index

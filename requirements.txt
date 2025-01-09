@@ -1,0 +1,11 @@
+
+kaggle
+pandas
+matplotlib
+numpy
+scikit-learn
+absl-py
+tensorflow-hub
+tensorflow
+torch
+tqdm
