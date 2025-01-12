@@ -22,7 +22,7 @@ The network architecture is a simple feed forward network with two hidden layer.
 ## Results
 The picture shows the confusion matrix of the trained neural network. The network shows relativley good result and classifies most of the entries correctly, though it confuses a fair bit of tweets with negative sentiment with positive sentiment.
 
-![Confusion matrix]()
+![Confusion matrix](imgs/confusionmatrix.png)
 
 Classification rapport:
 
