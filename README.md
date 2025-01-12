@@ -33,7 +33,7 @@ Classification rapport:
 |   Positive    |   0.59        |   0.93    |   0.72        |   4123    |
 |   Irrelevant  |   0.73        |   0.73    |   0.73        |   2624    |
 |
-|   accuracy    |               |           |   0.73        |   14799   |
+|   accuracy    |   ---         |   ---     |   0.73        |   14799   |
 |   macro avg   |   0.77        |   0.73    |   0.73        |   14799   |
 |   weighted avg|   0.78        |   0.73    |   0.73        |   14799   |
 ---
