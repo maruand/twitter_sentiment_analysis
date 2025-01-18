@@ -185,12 +185,24 @@ def sentiment(pred):
     elif pred == 3:
         return 'Irrelevant'
 
+def export_confusion_matrix(cm, filename='results/confusion_matrix.csv'):
+    os.makedirs('results', exist_ok=True)
+    cm_df = pd.DataFrame(cm, index=['Negative', 'Neutral', 'Positive', 'Irrelevant'], columns=['Negative', 'Neutral', 'Positive', 'Irrelevant'])
+    cm_df.to_csv(filename)
+
 def plot_confusion_matrix(y_true, y_pred):
     cm = confusion_matrix(y_true, y_pred)
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Negative', 'Neutral', 'Positive', 'Irrelevant'], yticklabels=['Negative', 'Neutral', 'Positive', 'Irrelevant'])
     plt.xlabel('Predicted')
     plt.ylabel('True')
-    plt.show()
+    plt.savefig('confusion_matrix.png')
+    plt.close()
+    export_confusion_matrix(cm)
+
+def save_results(y_true, y_pred):
+    os.makedirs('results', exist_ok=True)
+    results = pd.DataFrame({'True': y_true, 'Predicted': y_pred})
+    results.to_csv('results/results.csv', index=False)
 
 def main():
     download_data('data')
@@ -215,10 +227,10 @@ def main():
     y_pred = y_pred.numpy()
     y_test = y_test.numpy()
 
+    save_results(y_test, y_pred)
     plot_confusion_matrix(y_test, y_pred)
 
     print(classification_report(y_test, y_pred))
 
 if __name__ == '__main__':
     main()
-    

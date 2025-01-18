@@ -39,7 +39,7 @@ Classification rapport:
 ---
 
 ## Prerequisites
-
+All the required dependencies can be install by running the command pip install -r requirements.txt
 ---
 
 ## Usage
