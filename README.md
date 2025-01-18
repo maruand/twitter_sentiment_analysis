@@ -36,12 +36,15 @@ Classification rapport:
 |   accuracy    |   ---         |   ---     |   0.73        |   14799   |
 |   macro avg   |   0.77        |   0.73    |   0.73        |   14799   |
 |   weighted avg|   0.78        |   0.73    |   0.73        |   14799   |
+
 ---
 
 ## Prerequisites
+
 All the required dependencies can be install by running the command pip install -r requirements.txt
+
 ---
 
 ## Usage
-
-
+* Run main.py
+* Results will be saved in ./results
