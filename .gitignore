@@ -3,3 +3,5 @@
 dev/universal_sentence_encoder/saved_model.pb
 dev/universal_sentence_encoder/variables/variables.data-00000-of-00001
 dev/universal_sentence_encoder/variables/variables.index
+dev/test_main.py
+dev/__pycache__/main.cpython-312.pyc
